@@ -1,0 +1,34 @@
+{
+	"smtp": {
+		"server": "hostname.domain.com",
+		"port": "25",
+		"from": "email@domain.com",
+		"to": "email@domain.com",
+		"subject": "RAID Monitor"
+	},
+	"domains": [
+		{
+			"domain": "domain",
+			"dc": "dc.domain.com",
+			"domainFQDN": "domain.com",
+			"svcAccUser": "user",
+			"svcAccPass": "76492d1116743f0423413b16050a5345MgB8AGcANgBNAFAANAAyAGkAaQAvAEcANABSAHgAagBnAFkANABNAEIAQwA5AHcAPQA9AHwAOQA3AGEANAAxADcAMgBhADMAZAA2ADIANwA0AGUAMQA0ADUAOQA4ADEANwA2ADIANwAyAGYAMAA1AGEAMQBkAA=="
+		}
+	],
+	"servers": [
+		{
+			"hostname": "SERVER01",
+			"domain": "domain",
+			"connectionType": "PS",
+			"command":  ".\"C:\\Program Files\\Smart Storage Administrator\\ssacli\\bin\\ssacli.exe\" ctrl all show config 2>&1",
+			"failedRegex": "Failed"
+		},
+		{
+			"hostname": "SERVER02",
+			"domain": "domain",
+			"connectionType": "PS",
+			"command":  ".\"C:\\Program Files\\Smart Storage Administrator\\ssacli\\bin\\ssacli.exe\" ctrl all show config 2>&1",
+			"failedRegex": "Failed"
+		}
+	]
+}
