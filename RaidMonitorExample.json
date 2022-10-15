@@ -29,6 +29,16 @@
 			"connectionType": "PS",
 			"command":  ".\"C:\\Program Files\\Smart Storage Administrator\\ssacli\\bin\\ssacli.exe\" ctrl all show config 2>&1",
 			"failedRegex": "Failed"
+		},
+		{
+			"hostname": "SERVER03",
+			"domain": null,
+			"ip": "192.168.20.161",
+			"connectionType": "SSH",
+			"sshUser": "root",
+			"sshPass": "76492d1116743f0423413b16050a5345MgB8AGcANgBNAFAANAAyAGkAaQAvAEcANABSAHgAagBnAFkANABNAEIAQwA5AHcAPQA9AHwAOQA3AGEANAAxADcAMgBhADMAZAA2ADIANwA0AGUAMQA0ADUAOQA4ADEANwA2ADIANwAyAGYAMAA1AGEAMQBkAA==",
+			"command":  "/opt/hp/hpssacli/bin/hpssacli ctrl all show config",
+			"failedRegex": "Failed"
 		}
 	]
 }
